@@ -65,7 +65,7 @@
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
-    content: "\f107";
+    content: "\f107";   
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
@@ -209,8 +209,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .9);
-    transition: .5s;
+    background: rgba(0, 0, 0, 0.95);
+    transition: .3s;
 }
 
 .team-item .team-img::after {
@@ -235,10 +235,12 @@
     transition: .5s;
     z-index: 3;
     opacity: 0;
+    margin: 0 15px;
+    width: 270px;    
 }
 
 .team-item:hover .team-img .team-social {
-    transition-delay: .3s;
+    transition-delay: .1s;
     opacity: 1;
 }
 
