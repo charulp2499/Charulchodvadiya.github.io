@@ -33,6 +33,9 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -326,7 +329,7 @@ h6 {
   color: #45505b;
   line-height: 1;
   margin-right: 20px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 #home .social-links a:hover {
@@ -450,7 +453,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.621);
+  background: #74a9db;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,9 +515,69 @@ section {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+.team-item .team-img::before,
+.team-item .team-img::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #74a9db;
+    transition: .3s;
+}
+
+.team-item .team-img::after {
+    left: auto;
+    right: 0;
+}
+
+.team-item:hover .team-img::before,
+.team-item:hover .team-img::after {
+    width: 50%;
+}
+
+.team-item .team-img .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 3;
+    opacity: 0;
+    margin: 0 15px;
+    width: 270px;    
+}
+
+.team-item:hover .team-img .team-social {
+    transition-delay: .1s;
+    opacity: 1;
+}
+
+.team-item .team-social .btn {
+    display: inline-flex;
+    margin: 0 3px;
+    color: var(--primary);
+    background: var(--dark);
+}
+
+.team-item .team-social .btn:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+}
+
+
+
 
 /*--------------------------------------------------------------
-# Akills
+# skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -1245,3 +1308,5 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+
