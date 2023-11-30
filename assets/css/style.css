@@ -390,6 +390,12 @@ section {
   margin-bottom: 0;
 }
 
+.line {
+  border-bottom: 1px solid #000000aa; /* You can adjust the color and style as needed */
+}
+
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
