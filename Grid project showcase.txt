@@ -1,0 +1,131 @@
+  <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-project">Major Project</li>
+              <li data-filter=".filter-side">Side Project</li>
+              <li data-filter=".filter-other">Other Project</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/Brain.png" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Brain Tumor Image Segmentation Using Federated Learning</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <!-- <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-link"></i></a> -->
+                  <a href="brain_tumor.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/thermal.jpg" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Optimal Segmentation For Thermal Hotspot In</h4>
+                <h4>Liquid Body Using Deep Neural Network</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <!-- <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a> -->
+                  <a href="Hot_spot.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-other">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/Hatespeech.png" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Hate Speech Detection</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/Medical_Image.png" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Medical Image Segmentation</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-side">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/solar.png" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Predicting Solar Power Generation With Its Maintenance Activities</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <a href="solar.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a>
+                  <!-- <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a> -->
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-side">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/face2.png" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Night Vision Face Detection</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <a href="Night_Vision.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a>
+                  <!-- <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a> -->
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-side">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/plam.jpg" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>Palm Print Detection And Identification</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <a href="plam_print.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a>
+                  <!-- <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a> -->
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-other">
+            <div class="portfolio-wrap">
+              <img src="assets/Graphics/img/university.png" class="portfolio-img" alt="">
+              <div class="portfolio-info">
+                <h4>University Alumni Portal</h4>
+                <!-- <p>sdffdbd</p> -->
+                <div class="portfolio-links">
+                  <a href="university_por.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><u><h6>More Details</h6></u></a>
+                  <!-- <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a> -->
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>

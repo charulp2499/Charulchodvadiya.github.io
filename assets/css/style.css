@@ -911,7 +911,7 @@ section {
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
 }
 
 .services .icon-box .icon {
@@ -1348,3 +1348,129 @@ section {
   box-shadow: none;
 }
 
+
+
+
+/* Project Card */
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between project cards */
+}
+
+.project-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-image img {
+  width: 300px; /* Made the image wider */
+  height: 200px; /* Adjusted height to maintain aspect ratio */
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.project-details {
+  padding: 20px; /* Increased padding for a more spacious feel */
+  flex-grow: 1;
+}
+
+.project-details h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-details p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 20px; /* Increased padding for larger buttons */
+  background-color: #007bff;
+  color: white;
+  border-radius: 30px; /* Made buttons more rounded */
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Added subtle shadow */
+  text-transform: uppercase; /* Uppercase text for style */
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .project-container  {
+      padding: 10px;
+  }
+
+  .project-card {
+      flex-direction: column;
+  }
+
+  .project-image img {
+      width: 100%;
+      height: 200px; /* Fixed height for consistency */
+  }
+
+  .project-details {
+      padding: 15px;
+  }
+
+  .project-details h2 {
+      font-size: 1.5em;
+  }
+
+  .project-details p {
+      font-size: 0.9em;
+  }
+
+  .buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .btn {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details h2 {
+      font-size: 1.3em;
+  }
+
+  .project-details p {
+      font-size: 0.8em;
+  }
+
+  .btn {
+      padding: 8px;
+      font-size: 0.9em;
+  }
+}
