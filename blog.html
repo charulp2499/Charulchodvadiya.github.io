@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Charul Chodvadiya</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/Graphics/icon/logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+
+<!-- Blog Listing for blog.html -->
+<div class="blog-list">
+    <h2>All Blog Posts</h2>
+
+    <!-- Blog Item 1 -->
+    <div class="blog-item">
+        <img src="assets/Graphics/blogs/blog_1.webp" alt="Blog 1 Image" class="blog-image">
+        <h3>Model Calibration in Computer Vision: Enhancing Prediction Confidence for Reliable Decision-Making</h3>
+        <p class="blog-date">Published on: September 20, 2024</p>
+        <button class="read-more" onclick="openModal('blog1')">Read More</button>
+    </div>
+
+    <!-- Blog Item 2
+    <div class="blog-item">
+        <img src="assets/images/blog2.jpg" alt="Blog 2 Image" class="blog-image">
+        <h3>Blog Title 2</h3>
+        <p class="blog-date">Published on: October 5, 2024</p>
+        <p>Preview of the second blog post...</p>
+        <button class="read-more" onclick="openModal('blog2')">Read More</button>
+    </div>
+
+     Blog Item 3 
+    <div class="blog-item">
+        <img src="assets/images/blog3.jpg" alt="Blog 3 Image" class="blog-image">
+        <h3>Blog Title 3</h3>
+        <p class="blog-date">Published on: October 15, 2024</p>
+        <p>Preview of the third blog post...</p>
+        <button class="read-more" onclick="openModal('blog3')">Read More</button>
+    </div> -->
+
+</div>
+
+<!-- Modal structure for displaying the detailed blog content -->
+<div id="blogModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modal-body">
+            <!-- Detailed content for each blog post, initially hidden -->
+            <div id="blog1" class="modal-blog-content">
+                <h3>Model Calibration in Computer Vision: Enhancing Prediction Confidence for Reliable Decision-Making</h3>
+                <p class="blog-date">Published on: 07/11/2024 
+                <p class="fst-italic" style="text-align: justify;">In computer vision, model predictions drive critical decisions across fields like autonomous driving, medical imaging, 
+                    and security. But with high-stakes outcomes, it’s not enough to simply make a prediction — models need to be confident
+                     in those predictions, especially when dealing with uncertainty in image-based tasks. <b>Calibration</b> ensures that a model’s 
+                     confidence reflects the actual likelihood of correct predictions, making it essential in computer vision applications where prediction 
+                     reliability impacts safety and outcomes. </p>
+                <p class="fst-italic" style="text-align: justify;">This blog explores model calibration for computer vision tasks, why it matters, the most effective calibration techniques,
+                    how to evaluate calibration, and best practices — all with insights from current research.
+                </p>
+
+
+                <img src="assets/Graphics/blogs/blog_1.webp" alt="Blog 1 Image" class="modal-blog-image">
+
+                <b><h4>Why Calibration is Essential in Computer Vision</h4></b>
+
+                <p class="fst-italic" style="text-align: justify;">
+                    In computer vision, models often work with high-dimensional data that can introduce ambiguity, particularly in scenarios where images may be partially occluded, noisy, or contain complex scenes. Miscalibrated models — those whose predicted probabilities don’t align well with the true likelihoods — pose significant risks in vision tasks:
+                </p>
+                <ul style="list-style-type:square">
+                    <li>Autonomous Driving: An overconfident model could incorrectly predict the presence or absence of obstacles, potentially causing accidents.</li>
+                    <li>Medical Imaging: In diagnostics, an underconfident model might fail to highlight subtle abnormalities, leading to misdiagnosis or missed conditions.</li>
+                    <li>Security Applications: Miscalibration in face recognition or object detection systems could result in erroneous identifications, posing risks in secure environments.</li>
+                </ul>
+                    
+                <p class="fst-italic" style="text-align: justify;">As deep neural networks (DNNs) are widely used in computer vision, these models are particularly 
+                    prone to overconfidence, especially when they produce logit-based outputs. Calibration techniques help adjust these probabilities, ensuring predictions better reflect real-world uncertainties.
+                </p>
+
+                <b><h4>Popular Calibration Techniques in Computer Vision</h4></b>
+
+                <p class="fst-italic" style="text-align: justify;">
+                    Various techniques can calibrate model outputs to make their confidence levels more realistic.
+                     Below are some of the most commonly used calibration techniques in computer vision:
+                </p>
+                <ol type="1" style="text-align: justify;" class="fst-italic">
+                    <h6><b><li>Temperature Scaling</li></b></h6>
+                    <p class="fst-italic" style="text-align: justify;">How It Works: Temperature scaling is widely used in computer vision due to its simplicity. By introducing a temperature parameter that “softens” or
+                         “hardens” the logit scores, it normalizes confidence levels without altering the relative ranking of predictions.
+                    </p>
+
+                    <p class="fst-italic" style="text-align: justify;">Use Case: It is particularly effective with deep learning models in tasks like image classification,
+                         where the model’s logits can be adjusted to yield more accurate probabilities.
+                    </p>
+
+
+                    <b>Strengths: </b>
+                    <ul style="list-style-type:circle">
+                    
+                        <li> Easy to implement and computationally inexpensive.</li>
+                        <li>Works effectively on large neural networks like convolutional neural networks (CNNs).</li>
+                    </ul>
+Limitations:
+
+Limited to softmax-based models and is less effective for models trained on highly imbalanced datasets.
+                    
+                    
+                    
+                    <li>Isotonic Regression</li>
+                    <li>Dirichlet Calibration</li>
+                    <li>Bayesian Binning into Quantiles (BBQ)</li>
+                </ol>
+
+            </div>
+
+
+            <!-- <div id="blog2" class="modal-blog-content">
+                <h3>Blog Title 2</h3>
+                <p class="blog-date">Published on: October 5, 2024</p>
+                <img src="assets/images/blog2.jpg" alt="Blog 2 Image" class="modal-blog-image">
+                <p>Detailed content for Blog 2 goes here...</p>
+            </div>
+            <div id="blog3" class="modal-blog-content">
+                <h3>Blog Title 3</h3>
+                <p class="blog-date">Published on: October 15, 2024</p>
+                <img src="assets/images/blog3.jpg" alt="Blog 3 Image" class="modal-blog-image">
+                <p>Detailed content for Blog 3 goes here...</p>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+</main><!-- End #main -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/blog.js"></script>
+
+</body>
+
+</html>
